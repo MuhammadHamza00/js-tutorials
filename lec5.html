@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- after() – insert a node after an element.
+    append() – insert a node after the last child node of a parent node.
+    prepend() – insert a node before the first child node of a parent node. -->
+    <!-- insertBefore() -  -->
+    <!-- <div id="referenceElement">Reference Element</div> -->
+
+    <!-- parent -->
+    <div id="parentElement">
+        <!-- childs -->
+
+        <p id="first">1st child</p>
+        <p id="second">2nd child</p>
+        <!-- new child -->
+        <p id="forth">4th child</p>
+
+    </div>
+
+    <script>
+        // let referenceElement = document.getElementById("referenceElement");
+
+        // let newElement = document.createElement("div");
+        // newElement.textContent = "Second Div";
+
+        // referenceElement.after(newElement);
+
+        // append : last child
+        // let parentElement = document.getElementById("parentElement");
+
+        // let thirdChild = document.createElement("p");
+        // thirdChild.textContent = "3rd Child";
+
+        // parentElement.append(thirdChild);
+        
+        // // prepend : first child
+        // let firstChild = document.createElement("p");
+        // firstChild.textContent = "1st Child";
+
+        // parentElement.prepend(firstChild);
+
+        // get parent
+        let parentElement = document.getElementById("parentElement");
+        // get specifc child 
+        let forthChild = document.getElementById("forth");
+
+        // create new child
+        let thirdChild = document.createElement("p");
+        thirdChild.textContent = "3rd Child";
+
+        // put thirdChild after secondChild
+        parentElement.insertBefore(thirdChild,forthChild)
+    </script>
+</body>
+</html>

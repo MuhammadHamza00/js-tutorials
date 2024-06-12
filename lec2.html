@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 2</title>
+</head>
+<body>
+    <!--• getElementById() – select an element by id. 
+        • getElementsByName() – select elements by name. 
+        • getElementsByTagName()  – select elements by a tag name. 
+        • getElementsByClassName() – select elements by one or more class names. -->
+        <!-- • querySelector()() – select elements by one or more class names. -->
+
+    <p id="message1" class="para"></p>
+    <p id="message2" class="para"></p>
+    <p id="message3" class="para"></p>
+    <p id="message4" class="para"></p>
+
+    <input type="email" name="email" id="">
+
+    <script>
+        // let name = document.getElementsByName("email");
+        let name = document.querySelector("#message1");
+        
+
+
+        // let para = document.getElementsByTagName('p');
+
+        // let para = document.getElementsByClassName('para');
+
+        // para[0].innerHTML = "para1";
+        // para[1].innerHTML = "para2";
+        // para[2].innerHTML = "para3";
+        // para[3].innerHTML = "para4";
+
+        for (let index = 0; index < para.length; index++) {
+            const element = para[index];
+            element.innerHTML = "hello";
+        }
+
+        // alert(`The number of H2 tags: ${headings.length}`);
+        
+        // let para = document.getElementsByClassName("para");
+       
+    </script>
+</body>
+</html>

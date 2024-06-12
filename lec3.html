@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Section 3. Traversing elements
+        Get the parent element – get the parent node of an element.
+        Get child elements – get children of an element.
+        Get siblings of an element – get siblings of an element -->
+
+
+
+
+    <!-- <div id="parent">
+        <p id="child1"class="siblings">This is a child paragraph.</p>
+    </div> -->
+
+    <!-- <script>
+        let childElement = document.getElementById("child1");
+        let parentElement = childElement.parentNode
+
+        console.log(parentElement)
+    </script> -->
+ 
+    <!-- how to find childs -->
+ <div id="parent">
+    <p>This is the first child paragraph.</p>
+    <p>This is the second child paragraph.</p>
+    <p>This is the third child paragraph.</p>
+  </div>
+
+  <script>
+    let parentElement = document.getElementById("parent");
+    let childElement = parentElement.childNodes
+
+    console.log(childElement);
+  </script>
+  
+    
+      <!-- how to find siblings -->
+      <div>
+        <h1 id="first">First paragraph.</h1>
+        <p id="second">Second paragraph.</p>
+        <p id="third">Third paragraph.</p>
+      </div>
+    
+      <script>
+        let secondElement = document.getElementById("second");
+
+        let olderElement = secondElement.previousElementSibling;
+        let youngElement = secondElement.nextElementSibling;
+        console.log("Previous" + olderElement);
+        console.log("Next" + youngElement);
+
+      </script>
+</body>
+</html>
+
