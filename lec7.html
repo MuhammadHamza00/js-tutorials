@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #item{
+            height: 100vh;
+            border: 1px solid red;
+        }
+        .red { color: red; }
+        .bold { font-weight: bold; }
+        /* .day{
+            color: black;
+            background-color: white;
+        }
+        .night{
+            color: white;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <div id="item"class="red bold">Lorem </div>
+
+    <script>
+        const item = document.getElementById("item");
+        
+        item.classList.add('italic');
+
+        item.classList.remove('red');
+
+        item.classList.toggle('red');
+
+        console.log(item.classList);
+
+        // item.className = 'night';
+
+        // const height = item.clientHeight;
+        // console.log(height);
+        // console.log(item.className);
+
+        // item.className = 'blue';
+
+        // console.log(item.className);
+
+        // const itemStyle = getComputedStyle(item);
+        // console.log(itemStyle.fontSize);
+        // console.log(itemStyle.color);
+
+        // item.style.backgroundColor = 'blue';
+    </script>
+</body>
+</html>
